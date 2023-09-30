@@ -1,11 +1,11 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  copy_repo_job:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
       - name: Step 1
-        uses: /
+        run: pwd
       - name: Step 2
-        run: echo "Hello Hello xxx"
+        run: git -v
