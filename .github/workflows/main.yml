@@ -9,3 +9,5 @@ jobs:
         run: pwd
       - name: Step 2
         run: git -v
+      - name: Step 3
+        run: git status
