@@ -6,4 +6,6 @@ jobs:
     name: A job to say hello
     steps:
       - name: Step 1
+        uses: ./
+      - name: Step 2
         run: echo "Hello Hello xxx"
