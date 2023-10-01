@@ -5,11 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: Step 1
-        run: pwd
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Step 2
-        run: git clone https://github.com/onehitdragon/ci-cd-v0.git .
-      - name: Step 3
         run: ls -a
-      - name: Step 4
+      - name: Step 3
         uses: ./
